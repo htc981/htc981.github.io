@@ -11,35 +11,27 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.E. in Information Engineering and B.A. in French Studies, Shanghai Jiao Tong University, 2027 (expected)
 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Sep 2024 ~ Present: Research Assistant
+  * Shanghai Jiao Tong University, X-LANCE
+  * Contributions included:
+    * Designing **agentic frameworks** for scientific question answering: 1 paper accepted by ACL 2025.
+    * Developing **question answering datasets** in the domain of artificial intelligence: 1 paper under review.
+    * Designing **post-training** methods for agent tool use and planning: 2 paper under review.
+  * Supervisor: Prof. Kai Yu and Prof. Lu Chen
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Jul ~ Sep 2024: Intern AI Engineer
+  * Public Development Department, Shanghai Research Institute, Huawei Technologies Co., Ltd.
+  * Contributions included:
+    * Integrating DB-GPT, a **text-to-SQL** framework with proprietary database and vector database.
+  * Supervisor: Yong Wang
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python, C++, JavaScript
 
 Publications
 ======
@@ -53,7 +45,7 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
@@ -61,4 +53,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
