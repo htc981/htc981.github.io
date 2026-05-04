@@ -9,48 +9,57 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.E. in Information Engineering and B.A. in French Studies, Shanghai Jiao Tong University, 2027 (expected)
+<style>
+.pdf-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 141.4%; /* A4 ratio (1:1.414) */
+  margin: 20px 0;
+}
 
-Experience
-======
-* Sep 2024 ~ Present: Research Assistant
-  * Shanghai Jiao Tong University, X-LANCE
-  * Contributions included:
-    * Designing **agentic frameworks** for scientific question answering: 1 paper accepted by ACL 2025.
-    * Developing **question answering datasets** in the domain of artificial intelligence: 1 paper under review.
-    * Designing **post-training** methods for agent tool use and planning: 2 paper under review.
-  * Supervisor: Prof. Kai Yu and Prof. Lu Chen
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+}
 
-* Jul ~ Sep 2024: Intern AI Engineer
-  * Public Development Department, Shanghai Research Institute, Huawei Technologies Co., Ltd.
-  * Contributions included:
-    * Integrating DB-GPT, a **text-to-SQL** framework with proprietary database and vector database.
-  * Supervisor: Yong Wang
-  
-Skills
-======
-* Python, C++, JavaScript
+.pdf-download {
+  text-align: center;
+  margin: 20px 0;
+}
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-<!-- Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+.pdf-download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #52adc8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pdf-download a:hover {
+  background-color: #3d8aa3;
+}
+
+@media (max-width: 768px) {
+  .pdf-container {
+    padding-bottom: 200%; /* Taller ratio for mobile */
+  }
+}
+</style>
+
+<div class="pdf-container">
+  <iframe src="{{ base_path }}/files/cv_en.pdf" type="application/pdf">
+    <p>Your browser does not support PDFs. Please <a href="{{ base_path }}/files/cv_en.pdf">download the PDF</a> to view it.</p>
+  </iframe>
+</div>
+
+<div class="pdf-download">
+  <a href="{{ base_path }}/files/cv_en.pdf" download>📥 Download CV (PDF)</a>
+  <a href="{{ base_path }}/files/cv_en.pdf" target="_blank">🔗 Open in New Tab</a>
+</div>
